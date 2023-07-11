@@ -59,7 +59,7 @@ const CreateProductPage = () => {
     // };
 
     axios
-      .post(`http://holar.tech/api/v1/stores/${id}/products`, 
+      .post(`https://holar.tech/api/v1/stores/${id}/products`, 
       {product_name: productName,
         price: price,
         description: description,

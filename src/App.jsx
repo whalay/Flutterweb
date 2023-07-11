@@ -17,6 +17,7 @@ import Store from './Pages/store';
 import DashboardPage from './Pages/DashboardPage';
 import StoreProductPage from './Pages/StoreProductPage';
 import StoreProductDetail from './Pages/StoreProductDetail';
+import CreateStorePage from './Pages/CreateStorePage';
 
 const router = createBrowserRouter([
   {
@@ -63,6 +64,10 @@ const router = createBrowserRouter([
   {
     path: 'dashboard',
     element: <DashboardPage />
+  },
+  {
+    path: 'stores',
+    element: <CreateStorePage />
   },
   {
     path: 'stores/:id/product',
