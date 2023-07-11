@@ -71,7 +71,7 @@ const DashboardPage = () => {
       ) : (
         <div className="mb-4">
           <p>You don't have any stores.</p>
-          <Link to='/store'>
+          <Link to='/create-store'>
             <button
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
               // onClick={handleCreateStore}

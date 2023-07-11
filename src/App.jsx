@@ -66,7 +66,7 @@ const router = createBrowserRouter([
     element: <DashboardPage />
   },
   {
-    path: 'stores',
+    path: 'create-store',
     element: <CreateStorePage />
   },
   {

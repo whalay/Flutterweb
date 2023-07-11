@@ -1,9 +1,8 @@
-import React, { useContext } from 'react';
+import  { useContext } from 'react';
 import { AuthContext } from '../context/AuthContext';
 
 const Store = () => {
-  const { authState } = useContext(AuthContext);
-  const { user } = authState
+  const { user } = useContext(AuthContext);
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-2xl font-bold mb-4">Welcome, {user?.last_name}</h1>
