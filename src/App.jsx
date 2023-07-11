@@ -7,7 +7,7 @@ import Homepage from './Pages/Homepage'
 import RegisterPage from './Pages/RegisterPage'
 import RootLayout from './Pages/Root';
 
-import CreateProductPage from './Pages/CreateProductpage';
+import CreateProductPage from './Pages/CreateProductPage';
 import LoginPage from './Pages/LoginPage';
 import ProductPage from './Pages/ProductPage';
 import ProductDetail from './Pages/ProductDetail';
