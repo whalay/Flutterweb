@@ -10,7 +10,7 @@ const Checks = () => {
 
     useEffect(() => {
         axios
-          .get('http://127.0.0.1:5000/api/auth/auth_status', { withCredentials: true })
+          .get('https://holar.tech/api/auth/auth_status', { withCredentials: true })
           .then((res) => {
             console.log(res)
             const data = res.data;

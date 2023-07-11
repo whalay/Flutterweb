@@ -20,7 +20,7 @@ const RegisterPage = () => {
 
     // Perform registration logic here, e.g. send a request to your Flask API
     try {
-      const response = await fetch('http://localhost:5000/api/v1/users', {
+      const response = await fetch('https://holar.tech/api/v1/users', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -55,7 +55,7 @@ const RegisterPage = () => {
   };
   const fetchRoles = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/v1/roles');
+      const response = await fetch('https://holar.tech/api/v1/roles');
       const data = await response.json();
       setRole(data);
       console.log(data);

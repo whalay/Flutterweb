@@ -10,7 +10,7 @@ const Logout = () => {
     useEffect(() => {
       axios
       .get(
-        'http://127.0.0.1:5000/api/auth/logout',
+        'https://holar.tech/api/auth/logout',
         { withCredentials: true }
       )
       .then((res) => {

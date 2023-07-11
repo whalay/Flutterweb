@@ -13,7 +13,7 @@ const Category = ({ nav, close }) => {
 
   const fetchCategories = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/v1/categories');
+      const response = await fetch('https://holar.tech/api/v1/categories');
       const data = await response.json();
       setCategories(data);
       console.log('good');

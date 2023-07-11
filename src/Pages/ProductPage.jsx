@@ -35,7 +35,7 @@ const ProductPage = () => {
     useEffect(() => {
         const fetchAllProducts = async () => {
             try {
-                const response = await fetch(`http://localhost:5000/api/v1/products`);
+                const response = await fetch(`https://holar.tech/api/v1/products`);
                 if (!response.ok) {
                     throw new Error('Failed to fetch products');
                 }
@@ -50,7 +50,7 @@ const ProductPage = () => {
 
         const fetchProducts = async () => {
             try {
-                const response = await fetch(`http://localhost:5000/api/v1/products/categories/${categoryId}`);
+                const response = await fetch(`http://holar.tech/api/v1/products/categories/${categoryId}`);
                 if (!response.ok) {
                     throw new Error('Failed to fetch products');
                 }

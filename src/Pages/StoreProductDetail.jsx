@@ -17,7 +17,7 @@ const StoreProductDetail = () => {
   const fetchProduct = async () => {
     try {
         console.log(storeID, id)
-        const response = await axios.get(`http://127.0.0.1:5000/api/v1/stores/${storeID}/product/${id}`, { withCredentials: true });
+        const response = await axios.get(`https://holar.tech/api/v1/stores/${storeID}/product/${id}`, { withCredentials: true });
         setProduct(response.data);
 
     } catch (error) {
@@ -31,7 +31,7 @@ const StoreProductDetail = () => {
 
   const handleDelete = async () => {
     try {
-      await axios.delete(`http://127.0.0.1:5000/api/v1/products/${id}`);
+      await axios.delete(`https://holar.tech/api/v1/products/${id}`);
       navigate('/products');
     } catch (error) {
       console.error('Error deleting product:', error);

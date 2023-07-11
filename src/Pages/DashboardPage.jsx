@@ -14,7 +14,7 @@ const DashboardPage = () => {
     // Fetch the user's store information from the backend
     // Replace 'YOUR_API_ENDPOINT' with the actual API endpoint for fetching the user's store
     axios
-    .get('http://127.0.0.1:5000/api/v1/mystores', {
+    .get('https://holar.tech/api/v1/mystores', {
       withCredentials: true,
     })
     .then((response) => {

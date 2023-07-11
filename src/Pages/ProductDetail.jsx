@@ -13,7 +13,7 @@ const ProductDetail = () => {
         const fetchProducts = async () => {
             console.log('Product ID:',id)
             try {
-                const response = await fetch(`http://localhost:5000/api/v1/products/${id}`);
+                const response = await fetch(`https://holar.tech/api/v1/products/${id}`);
                 if (!response.ok) {
                     throw new Error('Failed to fetch products');
                 }
