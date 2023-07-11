@@ -1,11 +1,8 @@
-import React, { useState, useEffect, useContext } from 'react';
-import { AuthContext } from '../context/AuthContext';
-import { useParams, useNavigate } from 'react-router-dom';
+import  { useState, useEffect } from 'react';
+import {  useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 const CreateProductPage = () => {
-  const { user } = useContext(AuthContext);
-  const { id } = useParams();
   const navigate = useNavigate();
 
   const [productName, setProductName] = useState('');
@@ -70,7 +67,7 @@ const CreateProductPage = () => {
         }
       })
       .then((res) => {
-        const data = res.data;
+        // const data = res.data;
         console.log(res);
         navigate('/dashboard');
       })
