@@ -13,7 +13,7 @@ import ProductPage from './Pages/ProductPage';
 import ProductDetail from './Pages/ProductDetail';
 import Logout from './Pages/Logout';
 import Checks from './Pages/checks';
-import Store from './Pages/store';
+import Store from './Pages/Store';
 import DashboardPage from './Pages/DashboardPage';
 import StoreProductPage from './Pages/StoreProductPage';
 import StoreProductDetail from './Pages/StoreProductDetail';
