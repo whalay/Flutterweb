@@ -1,6 +1,9 @@
 import React from 'react'
-import Navbar from "../Components/Navbar";
 import { Link } from 'react-router-dom';
+import Famasi from '../assets/Famasi.png';
+import girl from "../assets/girl-on-hat.webp";
+import creator from "../assets/creator.webp"
+import chair from '../assets/chair-lamp.webp';
 
 const Homepage = () => {
   return (
@@ -20,7 +23,7 @@ const Homepage = () => {
           </div>
         </div>
         <div className='basis-1/2'>
-          <img src="src/assets/Famasi.png" alt="" />
+          <img src={Famasi} alt="" />
         </div>
 
       </section>
@@ -32,7 +35,7 @@ const Homepage = () => {
           <p className='text-2xl md:text-4xl '>Whether you sell physical products like furniture</p>
         </div>
         <div className='basis-1/2'>
-          <img src="src/assets/chair-lamp.webp" alt="" className='' />
+          <img src={chair} alt="" className='' />
         </div>
       </div>
       <div className='flex flex-col md:flex-row-reverse items-center space-between gap-5 '>
@@ -40,8 +43,8 @@ const Homepage = () => {
           <p className='text-2xl md:text-4xl'>Or digital products like ebooks and art...</p>
         </div>
         <div className='basis-1/2 flex flex-col '>
-          <img src="src/assets/girl-on-hat.webp" alt="" />
-          <img src="src/assets/creator.webp" alt="" />
+          <img src={girl} alt="" />
+          <img src={creator} alt="" />
         </div>
       </div>
       <div className='h-screen flex text-center items-center'>
