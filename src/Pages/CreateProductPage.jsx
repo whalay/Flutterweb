@@ -1,9 +1,10 @@
 import  { useState, useEffect } from 'react';
-import {  useNavigate } from 'react-router-dom';
+import {  useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
 
 const CreateProductPage = () => {
   const navigate = useNavigate();
+  const {id} =  useParams();
 
   const [productName, setProductName] = useState('');
   const [price, setPrice] = useState(0.0);
