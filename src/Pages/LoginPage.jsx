@@ -1,7 +1,6 @@
-import React, { useState, useContext } from 'react';
+import  { useState, useContext } from 'react';
 import { AuthContext } from '../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
-import Cookies from 'js-cookie';
 import axios from 'axios';
 
 const LoginPage = () => {
@@ -19,7 +18,7 @@ const LoginPage = () => {
     // Perform login logic here, e.g. send a request to your Flask API
     axios
     .post(
-      'https://holar.tech/api/auth/login',
+      'http://127.0.0.1:5000/api/auth/login',
       { email, password },
       { withCredentials: true }
     )

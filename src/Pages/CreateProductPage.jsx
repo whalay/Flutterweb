@@ -1,8 +1,11 @@
-import  { useState, useEffect } from 'react';
-import {  useNavigate } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+// import { AuthContext } from '../context/AuthContext';
+import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 const CreateProductPage = () => {
+  // const { user } = useContext(AuthContext);
+  const { id } = useParams();
   const navigate = useNavigate();
 
   const [productName, setProductName] = useState('');
@@ -19,7 +22,7 @@ const CreateProductPage = () => {
 
   const fetchCategories = async () => {
     try {
-      const response = await axios.get('https://holar.tech/api/v1/categories');
+      const response = await axios.get('http://127.0.0.1:5000/api/v1/categories');
       setCategories(response.data);
       console.log('Categories:', response.data);
       console.log(`id: ${id}`);
@@ -56,7 +59,7 @@ const CreateProductPage = () => {
     // };
 
     axios
-      .post(`https://holar.tech/api/v1/stores/${id}/products`, 
+      .post(`http://127.0.0.1:5000/api/v1/stores/${id}/products`, 
       {product_name: productName,
         price: price,
         description: description,

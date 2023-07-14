@@ -19,7 +19,7 @@ const StoreProductPage = () => {
 
   const fetchProducts = async () => {
     try {
-      const response = await axios.get(`https://holar.tech/api/v1/stores/${id}/products`, { withCredentials: true });
+      const response = await axios.get(`https://holar.tech/api/v1/stores/${id}/products/`, { withCredentials: true });
       setProducts(response.data);
     } catch (error) {
       console.error('Error fetching products:', error);

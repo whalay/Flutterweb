@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useState } from 'react';
+import {  useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 const CreateStorePage = () => {
+  const navigate = useNavigate()
   const [storeName, setStoreName] = useState('');
   const [location, setLocation] = useState('');
 
@@ -19,7 +20,7 @@ const CreateStorePage = () => {
         }
       })
       .then((res) => {
-        const data = res.data;
+        // const data = res.data;
         console.log(res);
         navigate('/dashboard');
       })
