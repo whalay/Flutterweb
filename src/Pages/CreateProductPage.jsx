@@ -1,12 +1,15 @@
+
 import { useState, useEffect } from 'react';
 // import { AuthContext } from '../context/AuthContext';
 import { useParams, useNavigate } from 'react-router-dom';
+
 import axios from 'axios';
 
 const CreateProductPage = () => {
   // const { user } = useContext(AuthContext);
   const { id } = useParams();
   const navigate = useNavigate();
+
 
   const [productName, setProductName] = useState('');
   const [price, setPrice] = useState(0.0);
