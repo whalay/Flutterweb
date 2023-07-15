@@ -50,7 +50,7 @@ const ProductPage = () => {
 
         const fetchProducts = async () => {
             try {
-                const response = await fetch(`http://holar.tech/api/v1/products/categories/${categoryId}`);
+                const response = await fetch(`https://holar.tech/api/v1/products/categories/${categoryId}`);
                 if (!response.ok) {
                     throw new Error('Failed to fetch products');
                 }
