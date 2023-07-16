@@ -18,7 +18,7 @@ const LoginPage = () => {
     // Perform login logic here, e.g. send a request to your Flask API
     axios
     .post(
-      'http://127.0.0.1:5000/api/auth/login',
+      'https://holar.tech/api/auth/login',
       { email, password },
       { withCredentials: true }
     )

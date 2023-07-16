@@ -10,7 +10,7 @@ const DashboardPage = () => {
 
   useEffect(() => {
     axios
-      .get('http://127.0.0.1:5000/api/v1/mystores', {
+      .get('https://holar.tech/api/v1/mystores', {
         withCredentials: true,
       })
       .then((response) => {
