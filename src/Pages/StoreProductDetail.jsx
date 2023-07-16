@@ -31,7 +31,7 @@ const StoreProductDetail = () => {
 
   const handleDelete = async () => {
     try {
-      await axios.delete(`https://holar.tech/api/v1/stores/${storeID}/product/${id}`);
+      await axios.delete(`https://holar.tech/api/v1/stores/${storeID}/product/${id}`, { withCredentials: true });
       navigate('/products');
     } catch (error) {
       console.error('Error deleting product:', error);
